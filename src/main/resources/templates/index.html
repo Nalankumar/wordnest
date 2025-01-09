@@ -8,18 +8,92 @@
 	</head>
 
 	<body class="w-screen">
-		<nav>
-		  <button href="/login" class="btn"><a href="/login">login</a></button>
-		  <button  class="btn"><a href="/register">Register</a></button>
+		<header class="bg-white">
+		  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+		    <div class="flex h-16 items-center justify-between">
+		      <div class="flex-1 md:flex md:items-center md:gap-12">
+		        <a class="block text-teal-600" href="#">
+		          <span class="sr-only">Home</span>
+		          <img th:src="@{/images/logo.png}" class="w-10 h-10"/>
+		        </a>
+		      </div>
+
+		      <div class="md:flex md:items-center md:gap-12">
+		        <nav aria-label="Global" class="hidden md:block">
+		          <ul class="flex items-center gap-6 text-sm">
+		            <li>
+		              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> About </a>
+		            </li>
+
+		            <li>
+		              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Careers </a>
+		            </li>
+
+		            <li>
+		              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> History </a>
+		            </li>
+
+		            <li>
+		              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Services </a>
+		            </li>
+
+		            <li>
+		              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Projects </a>
+		            </li>
+
+		            <li>
+		              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Blog </a>
+		            </li>
+		          </ul>
+		        </nav>
+
+		        <div class="flex items-center gap-4">
+		          <div class="sm:flex sm:gap-4">
+					<a
+								  class="inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+								  href="/login"
+								>
+								  Login
+								</a>
+								<a class="inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+											  href="/register"
+											>
+								Register
+								</a>        
+		            </div>
+		          </div>
+
+		          <div class="block md:hidden">
+		            <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+		              <svg
+		                xmlns="http://www.w3.org/2000/svg"
+		                class="size-5"
+		                fill="none"
+		                viewBox="0 0 24 24"
+		                stroke="currentColor"
+		                stroke-width="2"
+		              >
+		                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+		              </svg>
+		            </button>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</header>
+		<nav class="h-[10vh]">
+			
+
 		</nav>
-		<div class="w-screen ">
-			<div class="flex flex-col">
-				<div>
-					<h1>Welcome to WordNest</h1>
+		<div class=" h-[90vh]">
+			<div class="flex flex-row">
+				<div class="h-[90vh]">
+					<h1 class="text-xl font-bold">Welcome to WordNest</h1>
 					<p>Your hub for sharing ideas, stories, and inspiration!<p>
 				</div>
 				<div>
-					<img th:src="@{/images/home/main-content.jpg}"/>	
+					<img th:src="@{/images/home/main-content.jpg}" class="w-[50vw]"/>	
 				</div>
 			</div>
 		</div>
